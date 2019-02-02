@@ -3,11 +3,11 @@ void hs(void);
 int main()
 {
 	int a,b,c,d;
-	int* p=&a;				      	  	//赋值，p为a的地址 
-	a=b=c=d=10;				      	  	//赋值a=10 
+	int* p=&a;				      	//赋值，p为a的地址 
+	a=b=c=d=10;				      	//赋值a=10 
 	printf("%d\n",a);		    	  	//输出a的值 
-	printf("a=%x\np=%x\n",&a,p);	//分两行输出a的地址，p的值
-								               	//因为上面的语句已经将a的地址取出来赋给p，所以p为a的地址，p=62fe38
+	printf("a=%x\np=%x\n",&a,p);			//分两行输出a的地址，p的值
+							//因为上面的语句已经将a的地址取出来赋给p，所以p为a的地址，p=62fe38
 	printf("%d\n",b);
 	printf("%d\n",c);
 	hs();
